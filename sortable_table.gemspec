@@ -19,8 +19,6 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
   s.test_files   = Dir['test/**/*']
 
-  s.has_rdoc = false
-
   s.authors = ["Dan Croak", "Joe Ferris", "Mike Burns", "Jon Yurek", "Boston.rb"]
   s.email   = %q{support@thoughtbot.com}
   s.homepage = "http://github.com/thoughtbot/sortable_table"
