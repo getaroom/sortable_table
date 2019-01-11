@@ -46,7 +46,7 @@ module SortableTable
           end
           
           def sortable_url(opts)
-            url_for(params.merge(:sort => opts[:sort], :order => link_sort_order(opts), :page => 1))
+            url_for(params.to_unsafe_hash.merge(:sort => opts[:sort], :order => link_sort_order(opts), :page => 1))
           end
           
           def link_sort_order(opts)
